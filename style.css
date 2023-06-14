@@ -1,0 +1,138 @@
+
+/* ------- 基本 ------- */
+
+body, h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #018485;
+}
+
+p {
+	line-height: 1.25em; 
+}
+
+p.hl {
+	color: #018485;
+}
+
+#content {
+	width:1920px;
+	height:1080px;
+	margin:0;
+}
+
+/* ------- ヘッダー ------- */
+
+header {
+	color:#ffffff;
+	background-color: #0E385B;
+	width: 100%;
+	height:64px;
+}
+
+.logo{
+	width:256px;
+	font-size:24px;
+	font-family:"Meiryo-Bold, Meiryo";
+	font-weight:700;
+	padding:14px 32px; 
+	float:left;
+}
+
+
+.step{
+	display:flex;
+	flex-wrap:wrap;
+	list-style:none;
+}
+li {
+	position:relative;
+	padding:17.5px 30px; 
+	margin: 0 0 10px 0;
+}
+li::after{
+	content:"";
+	position:absolute;
+	top:0;
+	right:-29px;
+	border-width:32px 15px;
+	border-style:solid;
+	z-index:10;
+}
+.step1{
+	background: #005884;
+}
+.step1::after{
+	border-color:transparent transparent transparent #005884 ;
+}
+.step1:hover{
+	background: #00486D;
+}
+
+.step1:hover::after{
+	border-color:transparent transparent transparent  #00486D ;
+}
+.step1:active{
+	background: #003652;
+}
+.step1:active::after{
+	border-color:transparent transparent transparent  #003652 ;
+}
+.step2{
+	background: #00699E;
+}
+.step2::after{
+	border-color:transparent transparent transparent #00699E ;
+}
+
+.selectbox {
+	display: inline-flex;
+}
+
+.selectbox select{
+	box-shadow: none;
+	background:transparent;
+	border:none; 
+	font-family: Meiryo;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: left;
+	color: #fff;
+	width: 100%;
+	padding:0px 10px;
+}
+
+.selectbox option{
+	color:#222222;
+}
+.selectbox select:active{
+	outline:none;
+	
+}
+.selectbox option:selected {
+	background:#E4F5FF;
+	color:#1F7ECC;
+}
+
+
+#main {
+	display:flex;
+	background-color: #ffffff;
+	width: 100%;
+	height:1080px;
+} 
+
+
+iframe {
+    border: none;
+    width: 100%;
+    height:100%;
+}
+
